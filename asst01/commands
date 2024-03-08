@@ -1,0 +1,6 @@
+arm-none-eabi-gdb.exe
+target remote localhost:3333
+monitor reset init
+monitor flash write_image erase "F:/3-2/asst01/asst01/src/kern/asst01/target/asst01.elf"
+monitor reset halt
+monitor resume
